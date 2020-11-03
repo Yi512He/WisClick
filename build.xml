@@ -1,0 +1,23 @@
+<project name="Web_Attack" default="compile" basedir=".">
+        <path id="classpath">
+                <fileset dir="src/lib">
+                        <include name="*.jar"/>
+                </fileset>
+        </path>
+        <target name="compile">
+                <mkdir dir="build/classes"/>
+                <copy file="src/run.sh" todir="build/classes/"/>
+                <chmod file="build/classes/run.sh" perm="ugo+rx"/>
+                <copy todir="build/classes/WebContext">
+			<fileset dir="src/WebContext">
+                        	<include name="**"/>
+                        </fileset>
+		</copy>
+                <javac srcdir="src" includeantruntime="false" destdir="build/classes/">
+                        <classpath refid="classpath"/>
+                </javac>
+        </target>
+        <target name="clean">
+                <delete dir="build"/>
+        </target>
+</project>

@@ -1,0 +1,111 @@
+/*
+ * Navbar.css
+ * Used by Account page, Earn points page, Transfer page, and Ranklist Page
+ * To style the navbar and logo
+ *
+ * Author: Emma He
+ */
+
+/*
+ * Font style, color, and background color, 
+ * inherited by all elements
+ */
+body {
+        background-color: #222;
+        color: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*
+ * Visibility of logout form
+ */
+.logoutForm {
+	display: inline;
+}
+
+/*
+ * Style the logout input into a link field
+ */
+.logoutInput {
+	background: none;
+	border: 0;
+	color: white;
+	font-size: 18px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	display: inline;
+}
+
+/*
+ * Style for each individual item in the navbar 
+ */
+.nav {
+	color: white;
+  	text-decoration: none;
+	padding: 0.5rem;
+	position: relative;
+	top: 40%;
+}
+
+/*
+ * Style for logout input for different events
+ */
+.logoutInput:hover {
+	text-decoration: underline;
+}
+
+.logoutInput:active {
+	text-decoration: underline;
+}
+
+.hello {
+	margin-top: 5px;
+	margin-right: 20px;
+	float: right;
+	font-size: 24px;
+	color: red;
+}
+
+.logoutInput:visited {
+	text-decoration: underline;
+}
+
+/*
+ * Style for link items in navbar for different events
+ */
+#headerNav a:link {
+	color: white;
+}
+
+#headerNav a:hover {
+	text-decoration: underline;
+}
+
+#headerNav a:active {
+	text-decoration: underline;
+}
+
+#headerNav a:visited {
+	text-decoration: underline;
+}
+
+#text {
+	display: none;
+}
+
+/*
+ * Style for the navbar
+ */
+#stripe {
+        height: 35px;
+        line-height: 40px;
+        font-size: 18px;
+	display: inline;
+	position: absolute;
+	top: 35px;
+	right: 20px;
+}
+
+#headerNav {
+	background-color: black;
+	padding-bottom: 10px;
+}
