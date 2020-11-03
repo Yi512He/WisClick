@@ -2,7 +2,7 @@
 
 <h3>Introduction</h3>
 <p>This website is for educational purpose only. </p><p>
-It can be used to practice XSS and CSRF attacks and corresponding mitications. 
+It can be used to practice XSS and CSRF attacks and corresponding mitigations. 
 </p>
 
 <h3>Environment</h3>
